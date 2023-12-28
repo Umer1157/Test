@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <ul>
+        <li>
+            <button class="button1">Toggle</button>
+            <p class="p1">
+                This is the paragraph to end all paragraphs. You
+                should feel <em>lucky</em> to have seen such a paragraph in
+                your life. Congratulations!
+            </p>
+        </li>
+        <li>
+            <button class="button2">Toggle</button>
+            <p class="p2">
+                This is the paragraph to end all paragraphs. You
+                should feel <em>lucky</em> to have seen such a paragraph in
+                your life. Congratulations!
+            </p>
+        </li>
+        <li>
+            <button class="button3">Toggle</button>
+            <p class="p3">
+                This is the paragraph to end all paragraphs. You
+                should feel <em>lucky</em> to have seen such a paragraph in
+                your life. Congratulations!
+            </p>
+        </li>
+        <li>
+            <button class="button4">Toggle</button>
+            <p class="p4">
+                This is the paragraph to end all paragraphs. You
+                should feel <em>lucky</em> to have seen such a paragraph in
+                your life. Congratulations!
+            </p>
+        </li>
+
+        <img src="https://cc-west-usa.cjdropshipping.com/243eeb13-e249-40c0-afd7-1d834f980954.jpg" alt="">
+    </ul>
+    <style>
+        li{
+            list-style-type: none;
+            margin: 0 auto;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+    <script>
+
+        $(".button1").click(function () {
+            $(".p1").slideToggle("slow");
+            $(this).closest("li").siblings().find('p').slideUp();
+        });
+        $(".button2").click(function () {
+            $(".p2").slideToggle("slow");
+            $(this).closest("li").siblings().find('p').slideUp();
+        });
+        $(".button3").click(function () {
+            $(".p3").slideToggle("slow");
+            $(this).closest("li").siblings().find('p').slideUp();
+        });
+        $(".button4").click(function () {
+            $(".p4").slideToggle("slow");
+            $(this).closest("li").siblings().find('p').slideUp();
+        });
+    </script>
+</body>
+
+</html>
